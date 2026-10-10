@@ -1,8 +1,8 @@
 function Main() {
     return (
-        <Main>
+        <main className="min-h-screen bg-slate-50 md:ml-64">
             
-        </Main>
+        </main>
     )
 }
 
