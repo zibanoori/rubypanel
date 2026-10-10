@@ -44,6 +44,12 @@ function Sidebar() {
           </button>
         ))}
       </nav>
+
+<div className="mt-auto rounded-xl border border-slate-800 p-4">
+
+</div>
+
+
     </aside>
   );
 }
