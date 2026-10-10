@@ -50,6 +50,10 @@ function Sidebar() {
           <span className="h-2 w-2 rounded-full bg-emerald-400"></span>
           <span className="text-sm font-medium">System Online</span>
         </div>
+
+        <p className="mt-2 text-xs leading-5 text-slate-400">
+            Your workspace is running smoothly
+        </p>
       </div>
     </aside>
   );
