@@ -48,7 +48,7 @@ function Sidebar() {
       <div className="mt-auto rounded-xl border border-slate-800 p-4">
         <div className="flex items-center gap-2">
           <span className="h-2 w-2 rounded-full bg-emerald-400"></span>
-          <span></span>
+          <span className="text-sm font-medium">System Online</span>
         </div>
       </div>
     </aside>
