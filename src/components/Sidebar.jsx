@@ -3,6 +3,7 @@ import {
   ChartNoAxesCombined,
   Users,
   Wrench,
+   FileText,
 } from "lucide-react";
 
 const menuItems = [
@@ -10,6 +11,7 @@ const menuItems = [
   { label: "Users", icon: Users },
   { label: "Analytics", icon: ChartNoAxesCombined },
   { label: "Tools", icon: Wrench },
+  { label: "Reports", icon: FileText },
 ];
 
 function Sidebar() {
