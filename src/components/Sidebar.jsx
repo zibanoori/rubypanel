@@ -16,7 +16,9 @@ function Sidebar() {
   return (
     <aside className="fixed inset-y-0 left-0 hidden w-64 flex-col bg-slate-950 px-5 py-6 text-white md:flex">
       <div className="mb-10 flex items-center gap-3">
-        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-rose-900 text-amber-300"></div>
+        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-rose-900 text-amber-300">
+          <LayoutDashboard size={22} />
+        </div>
       </div>
     </aside>
   );
