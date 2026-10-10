@@ -6,6 +6,9 @@ function Main() {
         <h1 className="mt-2 text-3xl font-bold text-slate-900">
           Dashboard Overview
         </h1>
+        <p className="mt-2 text-sm text-slate-500">
+          Welcome back! Here's what's happening today.
+        </p>
       </header>
     </main>
   );
