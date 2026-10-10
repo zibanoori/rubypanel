@@ -22,6 +22,9 @@ function Sidebar() {
         <h1 className="text-xl font-bold">
           Ruby<span className="text-rose-300">Panel</span>
         </h1>
+        <p className="mt-1 text-xs font-semibold uppercase tracking-widest text-slate-500">
+          Main Menu
+        </p>
       </div>
     </aside>
   );
