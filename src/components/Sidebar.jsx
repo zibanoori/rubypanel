@@ -13,7 +13,7 @@ const menuItem = [
 ];
 
 function Sidebar() {
-    return (
-        
-    )
+  return <aside></aside>;
 }
+
+export default Sidebar;
