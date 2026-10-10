@@ -11,3 +11,9 @@ const menuItem = [
   { label: "Analytics", icon: ChartNoAxesCombined },
   { label: "Wrench", icon: Wrench },
 ];
+
+function Sidebar() {
+    return (
+        
+    )
+}
