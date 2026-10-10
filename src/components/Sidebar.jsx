@@ -46,7 +46,7 @@ function Sidebar() {
       </nav>
 
       <div className="mt-auto rounded-xl border border-slate-800 p-4">
-        <div>
+        <div className="flex items-center gap-2">
           <span></span>
           <span></span>
         </div>
