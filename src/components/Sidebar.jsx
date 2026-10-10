@@ -52,7 +52,7 @@ function Sidebar() {
         </div>
 
         <p className="mt-2 text-xs leading-5 text-slate-400">
-            Your workspace is running smoothly
+          Your workspace is running smoothly
         </p>
       </div>
     </aside>
