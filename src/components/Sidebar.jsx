@@ -3,7 +3,7 @@ import {
   ChartNoAxesCombined,
   Users,
   Wrench,
-   FileText,
+  FileText,
 } from "lucide-react";
 
 const menuItems = [
@@ -45,11 +45,12 @@ function Sidebar() {
         ))}
       </nav>
 
-<div className="mt-auto rounded-xl border border-slate-800 p-4">
-
-</div>
-
-
+      <div className="mt-auto rounded-xl border border-slate-800 p-4">
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </aside>
   );
 }
