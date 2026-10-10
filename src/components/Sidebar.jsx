@@ -5,4 +5,7 @@ import {
   Wrench,
 } from "lucide-react";
 
-const menuItem = [{ label: "Dashboard", icon: LayoutDashboard }];
+const menuItem = [
+  { label: "Dashboard", icon: LayoutDashboard },
+  { label: "Users", icon: Users },
+];
