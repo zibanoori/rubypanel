@@ -19,6 +19,9 @@ function Sidebar() {
         <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-rose-900 text-amber-300">
           <LayoutDashboard size={22} />
         </div>
+        <h1 className="text-xl font-bold">
+          Ruby<span className="text-rose-300">Panel</span>
+        </h1>
       </div>
     </aside>
   );
