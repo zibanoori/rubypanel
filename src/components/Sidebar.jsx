@@ -25,6 +25,7 @@ function Sidebar() {
         <p className="mt-1 text-xs font-semibold uppercase tracking-widest text-slate-500">
           Main Menu
         </p>
+        <nav className="space-y-2"></nav>
       </div>
     </aside>
   );
