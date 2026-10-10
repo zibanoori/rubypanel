@@ -14,7 +14,11 @@ const menuItem = [
 
 function Sidebar() {
   return (
-    <aside className="fixed inset-y-0 left-0 hidden w-64 flex-col bg-slate-950 px-5 py-6 text-white md:flex"></aside>
+    <aside className="fixed inset-y-0 left-0 hidden w-64 flex-col bg-slate-950 px-5 py-6 text-white md:flex">
+      <div>
+        <div></div>
+      </div>
+    </aside>
   );
 }
 
