@@ -18,8 +18,7 @@ function Main() {
   { label: "Total Users", value:"2,740", change: "+14.8%", color:"violet"},
   { label: "Ravenue", value: "$16.4k", change:"+6.4%", color:"emerald"},
   { label: "Active Tools", value: "34", change: "+8", color:"amber"},
-
-
+  { label: "Reports", value: "156", change: "+5.2%", color: "rose" },
 ]}
       </div>
     </main>
