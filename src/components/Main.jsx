@@ -15,8 +15,11 @@ function Main() {
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 {[
-  { label: "Total Users", value:"2,840", change: "+12.8%", color:"violet"},
-  { label: "Ravenue", value: "$18.4k", change:"+8.4%", color:"emerald"}
+  { label: "Total Users", value:"2,740", change: "+14.8%", color:"violet"},
+  { label: "Ravenue", value: "$16.4k", change:"+6.4%", color:"emerald"},
+  { label: "Active Tools", value: "34", change: "+8", color:"amber"},
+
+
 ]}
       </div>
     </main>
