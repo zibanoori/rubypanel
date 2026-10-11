@@ -8,6 +8,9 @@ function Main() {
             Welcome back, here's what's happening today.
           </p>
         </div>
+        <button className="rounded-xl bg-rose-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-rose-800">
+          + New Report
+        </button>
       </div>
     </main>
   );
