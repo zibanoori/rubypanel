@@ -35,7 +35,8 @@ function Main() {
   stat.color === "emerald"
 ? "bg-emerald-50 text-emerald-600"
 : stat.color === "violet"
-
+? "bg-violet-50 text-violet-600"
+: stat.color === "amber"
 
 }`}>
 
