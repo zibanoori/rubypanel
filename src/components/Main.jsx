@@ -31,6 +31,11 @@ function Main() {
   <p className="text-sm font-medium text-slate-500">{stat.value}</p>
 <div className="mt-2 flex items-end justify-between">
 <span className="text-3xl font-bold text-slate-900">{stat.value}</span>
+<span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${
+  stat.color === "emerald"
+}`}>
+
+</span>
 </div>
 )) }
       </div>
