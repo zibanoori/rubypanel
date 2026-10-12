@@ -29,7 +29,9 @@ function Main() {
 ].map((state) => (
 <div key={state.label} className="rounded-2xl bg-white p-6 shadow-sm">
   <p className="text-sm font-medium text-slate-500">{state.label}</p>
+<div className="mt-2 flex items-end justify-between">
 
+</div>
 )) }
       </div>
 
