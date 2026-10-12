@@ -37,7 +37,8 @@ function Main() {
 : stat.color === "violet"
 ? "bg-violet-50 text-violet-600"
 : stat.color === "amber"
-
+? "bg-amber-50 text-amber-600"
+: "bg-rose-50 text-rose-600"
 }`}>
 
 </span>
