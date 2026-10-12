@@ -28,9 +28,9 @@ function Main() {
   { label: "Reports", value: "156", change: "+5.2%", color: "rose" },
 ].map((state) => (
 <div key={state.label} className="rounded-2xl bg-white p-6 shadow-sm">
-  <p className="text-sm font-medium text-slate-500">{state.label}</p>
+  <p className="text-sm font-medium text-slate-500">{stat.value}</p>
 <div className="mt-2 flex items-end justify-between">
-
+<span className="text-3xl font-bold text-slate-900">{stat.value}</span>
 </div>
 )) }
       </div>
