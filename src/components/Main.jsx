@@ -33,6 +33,10 @@ function Main() {
 <span className="text-3xl font-bold text-slate-900">{stat.value}</span>
 <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${
   stat.color === "emerald"
+? "bg-emerald-50 text-emerald-600"
+: stat.color === "violet"
+
+
 }`}>
 
 </span>
