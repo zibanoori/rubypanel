@@ -71,7 +71,7 @@ function Main() {
         </div>
       </main>
       <footer className="border-t border-slate-200 pt-6 pb-8 px-8">
-        <div className="flex flex-col items-center justify-between">
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm text-slate-500">
             RubyPanel © {new Date().getFullYear()} — Designed & Built by{" "}
             <span className="font-semibold text-rose-900">Ziba Nooriraj</span>
@@ -79,43 +79,40 @@ function Main() {
           <div className="flex items-center gap-6 text-slate-500">
             <a
               href="https://github.com/zibanoori"
-              target="blank"
+              target="_blank"
               rel="noreferrer"
-              aria-label="github"
-              className="hover:text-slate-800 transition-colors"
+              aria-label="GitHub"
+              className="hover:text-rose-900 transition-colors"
             >
               <VscGithubInverted size={22} />
             </a>
-
             <a
               href="https://linkedin.com/in/ziba-nouri"
-              target="blank"
-              aria-label="Linkedin"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
               className="hover:text-blue-600 transition-colors"
             >
               <TfiLinkedin size={20} />
             </a>
-
             <a
               href="https://youtube.com/@zibanoori"
-              target="blank"
+              target="_blank"
               rel="noreferrer"
               aria-label="YouTube"
-              className="hover:text-slate-800 transition-colors"
+              className="hover:text-red-600 transition-colors"
             >
               <TfiYoutube size={20} />
             </a>
-
             <a
-              href="instagram.com/ziba.noory"
-              target="blank"
+              href="https://instagram.com/ziba.noory"
+              target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
               className="hover:text-pink-600 transition-colors"
             >
               <TfiInstagram size={20} />
             </a>
-
             <a
               href="mailto:your-email@example.com"
               aria-label="Email"
