@@ -48,7 +48,9 @@ function Main() {
         ))}
       </div>
 
-
+<footer>
+  
+</footer>
      
 
     </main>
