@@ -71,8 +71,10 @@ function Main() {
         </div>
 
         <div className="mt-12 mb-6">
+<h3 className="text-xl font bold text-slate-900 flex items-center gap-2">
+  
+</h3>
 
-          
         </div>
       </main>
       <footer className="border-t border-slate-200 pt-6 pb-8 px-8">
