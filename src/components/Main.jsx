@@ -48,8 +48,8 @@ function Main() {
         ))}
       </div>
 
-<footer>
-  
+<footer >
+
 </footer>
      
 
