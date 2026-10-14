@@ -115,6 +115,14 @@ function Main() {
             >
               <TfiInstagram size={20} />
             </a>
+
+            <a
+              href="mailto:your-email@example.com"
+              aria-label="Email"
+              className="hover:text-slate-900 transition-colors"
+            >
+              <TfiEmail size={20} />
+            </a>
           </div>
         </div>
       </footer>
