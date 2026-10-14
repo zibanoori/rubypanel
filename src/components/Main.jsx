@@ -105,6 +105,16 @@ function Main() {
             >
               <TfiYoutube size={20} />
             </a>
+
+            <a
+              href="instagram.com/ziba.noory"
+              target="blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+              className="hover:text-pink-600 transition-colors"
+            >
+              <TfiInstagram size={20} />
+            </a>
           </div>
         </div>
       </footer>
