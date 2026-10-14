@@ -69,6 +69,11 @@ function Main() {
             </div>
           ))}
         </div>
+
+        <div className="mt-12 mb-6">
+
+          
+        </div>
       </main>
       <footer className="border-t border-slate-200 pt-6 pb-8 px-8">
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
