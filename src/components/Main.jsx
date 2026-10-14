@@ -74,6 +74,7 @@ function Main() {
         <div className="flex flex-col items-center justify-between">
           <p className="text-sm text-slate-500">
             RubyPanel © {new Date().getFullYear()} — Designed & Built by{" "}
+            <span className="font-semibold text-rose-900">Ziba Nooriraj</span>
           </p>
         </div>
       </footer>
