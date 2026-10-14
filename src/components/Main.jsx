@@ -1,4 +1,4 @@
-      
+import { TfiLinkedin } from "react-icons/tfi";
 function Main() {
   return (
     <main className="flex-1 overflow-y-auto bg-slate-50 p-8 md:ml-64">
@@ -16,8 +16,18 @@ function Main() {
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {[
-          { label: "Total Users", value: "2,840", change: "+12.8%", color: "violet" },
-          { label: "Revenue", value: "$18.4k", change: "+8.4%", color: "emerald" },
+          {
+            label: "Total Users",
+            value: "2,840",
+            change: "+12.8%",
+            color: "violet",
+          },
+          {
+            label: "Revenue",
+            value: "$18.4k",
+            change: "+8.4%",
+            color: "emerald",
+          },
           { label: "Active Tools", value: "24", change: "+3", color: "amber" },
           { label: "Reports", value: "156", change: "+5.2%", color: "rose" },
         ].map((stat) => (
@@ -35,10 +45,10 @@ function Main() {
                   stat.color === "emerald"
                     ? "bg-emerald-50 text-emerald-600"
                     : stat.color === "violet"
-                    ? "bg-violet-50 text-violet-600"
-                    : stat.color === "amber"
-                    ? "bg-amber-50 text-amber-600"
-                    : "bg-rose-50 text-rose-600"
+                      ? "bg-violet-50 text-violet-600"
+                      : stat.color === "amber"
+                        ? "bg-amber-50 text-amber-600"
+                        : "bg-rose-50 text-rose-600"
                 }`}
               >
                 {stat.change}
@@ -48,11 +58,7 @@ function Main() {
         ))}
       </div>
 
-<footer >
-
-</footer>
-     
-
+      <footer className=""></footer>
     </main>
   );
 }
