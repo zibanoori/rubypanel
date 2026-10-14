@@ -80,7 +80,12 @@ function Main() {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8"></div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="lg:col-span-2 relative overflow-hidden rounded-3xl border border-white/20 bg-white/50 p-8 shadow-xl backdrop-blur-md">
+
+
+        </div>
+        </div>
       </main>
       <footer className="border-t border-slate-200 pt-6 pb-8 px-8">
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
