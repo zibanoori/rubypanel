@@ -76,6 +76,7 @@ function Main() {
             RubyPanel © {new Date().getFullYear()} — Designed & Built by{" "}
             <span className="font-semibold text-rose-900">Ziba Nooriraj</span>
           </p>
+          <div className="flex items-center gap-6 text-slate-500"></div>
         </div>
       </footer>
     </div>
