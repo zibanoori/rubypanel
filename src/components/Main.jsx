@@ -71,7 +71,9 @@ function Main() {
         </div>
       </main>
       <footer className="border-t border-slate-200 pt-6 pb-8 px-8">
-        <div className="flex flex-col items-center justify-between"></div>
+        <div className="flex flex-col items-center justify-between">
+          <p className="text-sm text-slate-500"></p>
+        </div>
       </footer>
     </div>
   );
