@@ -72,7 +72,9 @@ function Main() {
       </main>
       <footer className="border-t border-slate-200 pt-6 pb-8 px-8">
         <div className="flex flex-col items-center justify-between">
-          <p className="text-sm text-slate-500"></p>
+          <p className="text-sm text-slate-500">
+            RubyPanel © {new Date().getFullYear()} — Designed & Built by{" "}
+          </p>
         </div>
       </footer>
     </div>
