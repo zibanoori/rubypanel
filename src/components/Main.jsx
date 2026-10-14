@@ -76,7 +76,17 @@ function Main() {
             RubyPanel © {new Date().getFullYear()} — Designed & Built by{" "}
             <span className="font-semibold text-rose-900">Ziba Nooriraj</span>
           </p>
-          <div className="flex items-center gap-6 text-slate-500"></div>
+          <div className="flex items-center gap-6 text-slate-500">
+            <a
+              href="https://github.com/zibanoori"
+              target="blank"
+              rel="noreferrer"
+              aria-label="github"
+              className="hover:text-slate-800 transition-colors"
+            >
+              <VscGithubInverted size={22} />
+            </a>
+          </div>
         </div>
       </footer>
     </div>
