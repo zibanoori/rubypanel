@@ -79,6 +79,8 @@ function Main() {
             Live System & Activity
           </h3>
         </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8"></div>
       </main>
       <footer className="border-t border-slate-200 pt-6 pb-8 px-8">
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
