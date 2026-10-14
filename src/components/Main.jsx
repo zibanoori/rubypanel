@@ -82,7 +82,7 @@ function Main() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 relative overflow-hidden rounded-3xl border border-white/20 bg-white/50 p-8 shadow-xl backdrop-blur-md">
-
+           <div className="absolute inset-0 bg-gradient-to-br from-violet-50 to-rose-50 opacity-50 -z-10"></div>
 
         </div>
         </div>
