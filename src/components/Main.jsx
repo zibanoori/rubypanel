@@ -86,6 +86,15 @@ function Main() {
             >
               <VscGithubInverted size={22} />
             </a>
+
+            <a
+              href="https://linkedin.com/in/ziba-nouri"
+              target="blank"
+              aria-label="Linkedin"
+              className="hover:text-blue-600 transition-colors"
+            >
+              <TfiLinkedin size={20} />
+            </a>
           </div>
         </div>
       </footer>
