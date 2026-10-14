@@ -95,6 +95,16 @@ function Main() {
             >
               <TfiLinkedin size={20} />
             </a>
+
+            <a
+              href="https://youtube.com/@zibanoori"
+              target="blank"
+              rel="noreferrer"
+              aria-label="YouTube"
+              className="hover:text-slate-800 transition-colors"
+            >
+              <TfiYoutube size={20} />
+            </a>
           </div>
         </div>
       </footer>
