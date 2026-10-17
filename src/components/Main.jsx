@@ -36,6 +36,14 @@ function Main() {
       data: "Oct 15, 2026",
       status: "completed",
     },
+
+    {
+      id: 2,
+      title: "User Growth Report",
+      date: "Oct 14, 2026",
+      status: "Processing",
+      type: "Analytics",
+    },
   ];
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 md:ml-64">
