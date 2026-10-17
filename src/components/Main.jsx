@@ -52,6 +52,14 @@ function Main() {
       status: "Completed",
       type: "System",
     },
+
+    {
+      id: 4,
+      title: "Q3 Financial Summary",
+      date: "Oct 10, 2026",
+      status: "Pending",
+      type: "Finance",
+    },
   ];
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 md:ml-64">
