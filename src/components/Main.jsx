@@ -19,7 +19,7 @@ import { useState } from "react";
 
 function Main() {
   const [hoveringDataKey, setHoveringDataKey] = useState(undefined);
-
+  const data = [{ name: "Sat", revenue: 4000, users: 240 }];
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 md:ml-64">
       <main className="flex-1 p-8">
