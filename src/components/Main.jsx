@@ -61,6 +61,12 @@ function Main() {
       type: "Finance",
     },
   ];
+
+  const handleMouseEnter = (o) => {
+    const { dataKey } = o;
+    setHoveringDataKey(dataKey);
+  };
+
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 md:ml-64">
       <main className="flex-1 p-8">
