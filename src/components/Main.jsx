@@ -28,6 +28,15 @@ function Main() {
     { name: "Thu", revenue: 9000, users: 830 },
     { name: "Fri", revenue: 7000, users: 640 },
   ];
+
+  const recentReport = [
+    {
+      id: 1,
+      title: "Monthly Sales Analysis",
+      data: "Oct 15, 2026",
+      status: "completed",
+    },
+  ];
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 md:ml-64">
       <main className="flex-1 p-8">
