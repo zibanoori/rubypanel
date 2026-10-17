@@ -44,6 +44,14 @@ function Main() {
       status: "Processing",
       type: "Analytics",
     },
+
+    {
+      id: 3,
+      title: "Server Load Metrics",
+      date: "Oct 13, 2026",
+      status: "Completed",
+      type: "System",
+    },
   ];
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 md:ml-64">
