@@ -26,6 +26,7 @@ function Main() {
     { name: "Tue", revenue: 8000, users: 780 },
     { name: "Wed", revenue: 5000, users: 490 },
     { name: "Thu", revenue: 9000, users: 830 },
+    { name: "Fri", revenue: 7000, users: 640 },
   ];
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 md:ml-64">
