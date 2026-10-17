@@ -5,6 +5,7 @@ import {
   TfiEmail,
 } from "react-icons/tfi";
 import { VscGithubInverted } from "react-icons/vsc";
+
 function Main() {
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 md:ml-64">
@@ -53,6 +54,9 @@ function Main() {
           </h3>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+
+
         </div>
       </main>
       <footer className="border-t border-slate-200 pt-6 pb-8 px-8 mt-auto">
