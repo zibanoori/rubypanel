@@ -73,7 +73,6 @@ function Main() {
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 md:ml-64">
       <main className="flex-1 p-8">
-        {/* Header Section */}
         <div className="mb-8 flex items-center justify-between">
           <div>
             <h2 className="text-2xl font-bold text-slate-900">Dashboard</h2>
@@ -85,8 +84,6 @@ function Main() {
             + New Report
           </button>
         </div>
-
-        {/* Stats Cards */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
@@ -135,8 +132,6 @@ function Main() {
             </div>
           ))}
         </div>
-
-        {/* Live System Title */}
         <div className="mt-12 mb-6">
           <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
             <span className="relative flex h-3 w-3">
@@ -147,9 +142,7 @@ function Main() {
           </h3>
         </div>
 
-        {/* Main Content Grid (Chart + Activity List) */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Left Column: Chart */}
           <div className="lg:col-span-2 relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
             <div className="absolute inset-0 bg-gradient-to-br from-violet-50 to-rose-50 opacity-30 -z-10"></div>
 
