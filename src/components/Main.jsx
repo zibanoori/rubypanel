@@ -19,6 +19,7 @@ import { useState } from "react";
 
 function Main() {
   const [hoveringDataKey, setHoveringDataKey] = useState(undefined);
+
   const data = [
     { name: "Sat", revenue: 4000, users: 240 },
     { name: "Sun", revenue: 3000, users: 139 },
@@ -29,14 +30,14 @@ function Main() {
     { name: "Fri", revenue: 7000, users: 640 },
   ];
 
-  const recentReport = [
+  const recentReports = [
     {
       id: 1,
       title: "Monthly Sales Analysis",
-      data: "Oct 15, 2026",
-      status: "completed",
+      date: "Oct 15, 2026",
+      status: "Completed",
+      type: "Sales",
     },
-
     {
       id: 2,
       title: "User Growth Report",
@@ -44,7 +45,6 @@ function Main() {
       status: "Processing",
       type: "Analytics",
     },
-
     {
       id: 3,
       title: "Server Load Metrics",
@@ -52,7 +52,6 @@ function Main() {
       status: "Completed",
       type: "System",
     },
-
     {
       id: 4,
       title: "Q3 Financial Summary",
@@ -70,9 +69,11 @@ function Main() {
   const handleMouseLeave = () => {
     setHoveringDataKey(undefined);
   };
+
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 md:ml-64">
       <main className="flex-1 p-8">
+        {/* Header Section */}
         <div className="mb-8 flex items-center justify-between">
           <div>
             <h2 className="text-2xl font-bold text-slate-900">Dashboard</h2>
@@ -84,6 +85,8 @@ function Main() {
             + New Report
           </button>
         </div>
+
+        {/* Stats Cards */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
@@ -132,6 +135,8 @@ function Main() {
             </div>
           ))}
         </div>
+
+        {/* Live System Title */}
         <div className="mt-12 mb-6">
           <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
             <span className="relative flex h-3 w-3">
@@ -142,9 +147,12 @@ function Main() {
           </h3>
         </div>
 
+        {/* Main Content Grid (Chart + Activity List) */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Left Column: Chart */}
           <div className="lg:col-span-2 relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
             <div className="absolute inset-0 bg-gradient-to-br from-violet-50 to-rose-50 opacity-30 -z-10"></div>
+
             <div className="flex justify-between items-center mb-6">
               <h4 className="font-semibold text-slate-800">
                 Performance Overview
@@ -154,6 +162,7 @@ function Main() {
                 <option>Last 30 Days</option>
               </select>
             </div>
+
             <div className="h-80 w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart
@@ -216,11 +225,96 @@ function Main() {
               </ResponsiveContainer>
             </div>
           </div>
+
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <h4 className="font-semibold text-slate-800 mb-4">
               Recent Reports
             </h4>
-            <div className="space-y-4"></div>
+            <div className="space-y-4">
+              {recentReports.map((report) => (
+                <div
+                  key={report.id}
+                  className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition-colors border border-transparent hover:border-slate-100"
+                >
+                  <div className="flex items-center gap-3">
+                    <div
+                      className={`w-2 h-2 rounded-full ${
+                        report.status === "Completed"
+                          ? "bg-emerald-500"
+                          : report.status === "Processing"
+                            ? "bg-amber-500"
+                            : "bg-slate-300"
+                      }`}
+                    ></div>
+                    <div>
+                      <p className="text-sm font-medium text-slate-900">
+                        {report.title}
+                      </p>
+                      <p className="text-xs text-slate-500">{report.date}</p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-medium px-2 py-1 bg-slate-100 text-slate-600 rounded-md">
+                    {report.type}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <button className="w-full mt-4 py-2 text-sm text-rose-900 font-medium hover:bg-rose-50 rounded-lg transition-colors">
+              View All Reports
+            </button>
+          </div>
+        </div>
+        <div className="mt-8 rounded-3xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+          <div className="p-6 border-b border-slate-100 flex justify-between items-center">
+            <h4 className="font-semibold text-slate-800">Detailed Analytics</h4>
+            <button className="text-sm text-rose-900 hover:underline">
+              Export CSV
+            </button>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-sm text-slate-600">
+              <thead className="bg-slate-50 text-xs uppercase font-semibold text-slate-500">
+                <tr>
+                  <th className="px-6 py-4">Report Name</th>
+                  <th className="px-6 py-4">Category</th>
+                  <th className="px-6 py-4">Date</th>
+                  <th className="px-6 py-4">Status</th>
+                  <th className="px-6 py-4 text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {recentReports.map((report) => (
+                  <tr
+                    key={report.id}
+                    className="hover:bg-slate-50/50 transition-colors"
+                  >
+                    <td className="px-6 py-4 font-medium text-slate-900">
+                      {report.title}
+                    </td>
+                    <td className="px-6 py-4">{report.type}</td>
+                    <td className="px-6 py-4">{report.date}</td>
+                    <td className="px-6 py-4">
+                      <span
+                        className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                          report.status === "Completed"
+                            ? "bg-emerald-100 text-emerald-800"
+                            : report.status === "Processing"
+                              ? "bg-amber-100 text-amber-800"
+                              : "bg-slate-100 text-slate-800"
+                        }`}
+                      >
+                        {report.status}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 text-right">
+                      <button className="text-rose-900 hover:text-rose-700 font-medium">
+                        View
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </main>
