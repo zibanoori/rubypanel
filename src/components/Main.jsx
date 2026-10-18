@@ -220,6 +220,7 @@ function Main() {
             <h4 className="font-semibold text-slate-800 mb-4">
               Recent Reports
             </h4>
+            <div className="space-y-4"></div>
           </div>
         </div>
       </main>
