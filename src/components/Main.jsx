@@ -216,7 +216,11 @@ function Main() {
               </ResponsiveContainer>
             </div>
           </div>
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"></div>
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h4 className="font-semibold text-slate-800 mb-4">
+              Recent Reports
+            </h4>
+          </div>
         </div>
       </main>
       <footer className="border-t border-slate-200 pt-6 pb-8 px-8 mt-auto">
