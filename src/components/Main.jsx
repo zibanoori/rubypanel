@@ -1,3 +1,4 @@
+import Navbar from "./Navbar";
 import {
   TfiLinkedin,
   TfiYoutube,
@@ -72,6 +73,7 @@ function Main() {
 
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 md:ml-64">
+          <Navbar />
       <main className="flex-1 p-8">
         <div className="mb-8 flex items-center justify-between">
           <div>
