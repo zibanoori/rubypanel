@@ -141,79 +141,82 @@ function Main() {
             Live System & Activity
           </h3>
         </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="absolute inset-0 bg-gradient-to-br from-violet-50 to-rose-50 opacity-30 -z-10"></div>
-          <div className="flex justify-between items-center mb-6">
-            <h4 className="font-semibold text-slate-800">
-              Performance Overview
-            </h4>
-            <select className="text-sm border-none bg-transparent text-slate-500 focus:ring-0 cursor-pointer">
-              <option>Last 7 Days</option>
-              <option>Last 30 Days</option>
-            </select>
+          <div className="lg:col-span-2 relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div className="absolute inset-0 bg-gradient-to-br from-violet-50 to-rose-50 opacity-30 -z-10"></div>
+            <div className="flex justify-between items-center mb-6">
+              <h4 className="font-semibold text-slate-800">
+                Performance Overview
+              </h4>
+              <select className="text-sm border-none bg-transparent text-slate-500 focus:ring-0 cursor-pointer">
+                <option>Last 7 Days</option>
+                <option>Last 30 Days</option>
+              </select>
+            </div>
+            <div className="h-80 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart
+                  data={data}
+                  margin={{ top: 20, right: 30, left: 0, bottom: 20 }}
+                >
+                  <CartesianGrid
+                    strokeDasharray="3 3"
+                    vertical={false}
+                    stroke="#f1f5f9"
+                  />
+                  <XAxis
+                    dataKey="name"
+                    axisLine={false}
+                    tickLine={false}
+                    tick={{ fill: "#94a3b8" }}
+                    dy={10}
+                  />
+                  <YAxis
+                    axisLine={false}
+                    tickLine={false}
+                    tick={{ fill: "#94a3b8" }}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: "#fff",
+                      borderRadius: "12px",
+                      border: "none",
+                      boxShadow: "0 10px 15px -3px rgb(0 0 0 / 0.1)",
+                    }}
+                  />
+                  <Legend
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    wrapperStyle={{ paddingTop: "20px" }}
+                  />
+
+                  <Line
+                    type="monotone"
+                    dataKey="revenue"
+                    name="Revenue ($)"
+                    stroke="#e11d48"
+                    strokeWidth={3}
+                    dot={{ r: 4, fill: "#e11d48" }}
+                    activeDot={{ r: 6 }}
+                    opacity={hoveringDataKey === "users" ? 0.3 : 1}
+                  />
+
+                  <Line
+                    type="monotone"
+                    dataKey="users"
+                    name="Active Users"
+                    stroke="#8b5cf6"
+                    strokeWidth={3}
+                    dot={{ r: 4, fill: "#8b5cf6" }}
+                    activeDot={{ r: 6 }}
+                    opacity={hoveringDataKey === "revenue" ? 0.3 : 1}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
           </div>
-
-          <div className="h-80 w-full">
-            <ResponsiveContainer width="100%" height="100%">
-              <LineChart
-                data={data}
-                margin={{ top: 20, right: 30, left: 0, bottom: 20 }}
-              >
-                <CartesianGrid
-                  strokeDasharray="3 3"
-                  vertical={false}
-                  stroke="#f1f5f9"
-                />
-                <XAxis
-                  dataKey="name"
-                  axisLine={false}
-                  tickLine={false}
-                  tick={{ fill: "#94a3b8" }}
-                  dy={10}
-                />
-                <YAxis
-                  axisLine={false}
-                  tickLine={false}
-                  tick={{ fill: "#94a3b8" }}
-                />
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: "#fff",
-                    borderRadius: "12px",
-                    border: "none",
-                    boxShadow: "0 10px 15px -3px rgb(0 0 0 / 0.1)",
-                  }}
-                />
-                <Legend
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                  wrapperStyle={{ paddingTop: "20px" }}
-                />
-
-                <Line
-                  type="monotone"
-                  dataKey="revenue"
-                  name="Revenue ($)"
-                  stroke="#e11d48"
-                  strokeWidth={3}
-                  dot={{ r: 4, fill: "#e11d48" }}
-                  activeDot={{ r: 6 }}
-                  opacity={hoveringDataKey === "users" ? 0.3 : 1}
-                />
-
-                <Line
-                  type="monotone"
-                  dataKey="users"
-                  name="Active Users"
-                  stroke="#8b5cf6"
-                  strokeWidth={3}
-                  dot={{ r: 4, fill: "#8b5cf6" }}
-                  activeDot={{ r: 6 }}
-                  opacity={hoveringDataKey === "revenue" ? 0.3 : 1}
-                />
-              </LineChart>
-            </ResponsiveContainer>
-          </div>
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"></div>
         </div>
       </main>
       <footer className="border-t border-slate-200 pt-6 pb-8 px-8 mt-auto">
