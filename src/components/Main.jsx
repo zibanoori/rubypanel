@@ -143,6 +143,11 @@ function Main() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="absolute inset-0 bg-gradient-to-br from-violet-50 to-rose-50 opacity-30 -z-10"></div>
+          <div className="flex justify-between items-center mb-6">
+            <h4 className="font-semibold text-slate-800">
+              Performance Overview
+            </h4>
+          </div>
         </div>
       </main>
       <footer className="border-t border-slate-200 pt-6 pb-8 px-8 mt-auto">
