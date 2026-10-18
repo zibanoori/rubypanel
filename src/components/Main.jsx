@@ -147,6 +147,7 @@ function Main() {
             <h4 className="font-semibold text-slate-800">
               Performance Overview
             </h4>
+            <select className="text-sm border-none bg-transparent text-slate-500 focus:ring-0 cursor-pointer"></select>
           </div>
         </div>
       </main>
