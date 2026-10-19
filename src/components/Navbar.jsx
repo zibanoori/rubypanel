@@ -1,4 +1,7 @@
 import { TfiSearch, TfiBell, TfiMenuAlt } from "react-icons/tfi";
+import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 import { useState, useEffect } from "react";
 
-function Navbar() {}
+function Navbar() {
+  const [isDark, setIsDark] = useState(false);
+}
