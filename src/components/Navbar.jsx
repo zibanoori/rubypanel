@@ -45,8 +45,24 @@ function Navbar() {
           />
         </div>
       </div>
-      <div className="flex items-center gap-6"></div>
+
+      <div className="flex items-center gap-6">
+        <div
+          onClick={toggleTheme}
+          className={`relative flex h-8 w-16 cursor-pointer items-center rounded-full p-1 transition-colors duration-300 ${
+            isDark ? "bg-slate-800" : "bg-blue-200"
+          }`}
+        >
+          <div className="absolute right-2 z-0 flex items-center justify-center">
+            <IoSunnyOutline
+              size={15}
+              className={`transition-all duration-300 drop-shadow-sm ${isDark ? "opacity-0 scale-75" : "opacity-100 scale-100 text-orange-600"}`}
+            />
+          </div>
+        </div>
+      </div>
     </nav>
   );
 }
+
 export default Navbar;
