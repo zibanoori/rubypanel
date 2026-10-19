@@ -33,6 +33,12 @@ function Navbar() {
         <button className="text-slate-500 hover:text-rose-900 lg:hidden">
           <TfiMenuAlt size={24} />
         </button>
+        <div className="relative hidden sm:block">
+          <TfiSearch
+            className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"
+            size={18}
+          />
+        </div>
       </div>
     </nav>
   );
