@@ -38,6 +38,11 @@ function Navbar() {
             className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"
             size={18}
           />
+          <input
+            type="text"
+            placeholder="Search reports..."
+            className="h-10 w-64 rounded-full border border-slate-200 bg-slate-50 pl-10 pr-4 text-sm outline-none focus:border-rose-900 focus:ring-1 focus:ring-rose-900 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 transition-all"
+          />
         </div>
       </div>
     </nav>
