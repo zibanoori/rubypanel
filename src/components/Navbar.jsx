@@ -45,6 +45,7 @@ function Navbar() {
           />
         </div>
       </div>
+      <div className="flex items-center gap-6"></div>
     </nav>
   );
 }
