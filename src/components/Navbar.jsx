@@ -28,5 +28,7 @@ function Navbar() {
   };
 }
 return (
-  <nav className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border bg-slate-200 bg-white/80 px-8 backdrop-blur-mddark:border-slate-800 dark:bg-slate-900/80 transition-colors duration-300"></nav>
+  <nav className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border bg-slate-200 bg-white/80 px-8 backdrop-blur-mddark:border-slate-800 dark:bg-slate-900/80 transition-colors duration-300">
+    <div className="flex items-center gap-4"></div>
+  </nav>
 );
