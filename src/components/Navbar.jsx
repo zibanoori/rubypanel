@@ -4,4 +4,12 @@ import { useState, useEffect } from "react";
 
 function Navbar() {
   const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("ruby-theme");
+    if (storedTheme === "dark") {
+      setIsDark(true);
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
 }
