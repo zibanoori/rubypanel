@@ -12,4 +12,18 @@ function Navbar() {
       document.documentElement.classList.add("dark");
     }
   }, []);
+
+  const toggleTheme = () => {
+    const newTheme = !isDark ? "dark" : "light";
+    setIsDark(!isDark);
+
+    if (newTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
+    localStorage.setItem("ruby-theme", newTheme);
+    document.documentElement.style.colorScheme = newTheme;
+  };
 }
