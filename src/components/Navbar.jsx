@@ -1,5 +1,6 @@
 import { TfiSearch, TfiBell, TfiMenuAlt } from "react-icons/tfi";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
+import profileImage from "../assets/zn-profile.webp";
 import { useState, useEffect } from "react";
 
 function Navbar() {
@@ -83,7 +84,7 @@ function Navbar() {
 
         <div className="flex items-center gap-3 cursor-pointer">
           <div className="h-9 w-9 overflow-hidden rounded-full border-2 border-white shadow-sm dark:border-slate-700">
-            <img src="" alt="Ziba Nooriraj" />
+            <img src={profileImage} alt="Ziba Nooriraj" />
           </div>
           <div className="hidden text-sm font-medium text-slate-700 dark:text-slate-200 md:block">
             Ziba Nooriraj
